@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="log_box">
+        <input type="text" name="" id="user_in" placeholder="username"><br>
+        <input type="password" placeholder="password" id="pass_in"><br>
+
+        <button id="log_btn" onclick="logbtn()">LogIn</button>
+    </div>
+    <div id="main">
+        <div class="row">
+            <div class="col-4" style="border: 2px solid  rgb(176, 62, 176); margin-top: 2px; width: 300px; margin-left: 10px; height: 150px; border-radius: 10px;">
+                <div class="card" id="deposit-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Deposit</h5>
+                        <h4 class="card-subtitle">$ <span id="depo-am">00</span></h4>
+                    </div>
+                </div>
+</div>
+
+            <!--  -->
+            <div class="col-41" style="border: 2px solid rgb(222, 42, 42); margin-top: 2px; width: 300px; margin-left: 90px; height: 150px; border-radius: 10px;">
+                <div class="card" id="withdraw-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Withdraw</h5>
+                        <h4 class="card-subtitle">$ <span id="wit-am">00</span></h4>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="col-42" style="border: 2px solid orange; margin-top: 2px; width: 300px; margin-left: 90px; height: 150px; border-radius: 10px;">
+                <div class="card" id="balance-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Balance</h5>
+                        <h4 class="card-subtitle">$ <span id="balance">00</span></h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--  -->
+
+          <div class="row-two">
+          <div class="col-6">
+            <div class="card" id="deposit-amount" style="border: 1.5px solid rgb(176, 62, 176); margin-top: 2px; width: 400px; margin-left: 150px; height: 85px; border-radius: 10px;">
+                <div class="card-body">
+                    <h5 class="card-title">Deposit Amount $ <span id="deposit-number">00</span></h5>
+                    <input id="input-deposit" type="number" placeholder="Enter your Deposit Amount">
+                    <button id="Deposit-btn">Deposit</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-66">
+            <div class="card" style="border: 1.5px solid rgb(176, 62, 176); margin-top: 2px; width: 400px; margin-left: 150px; height: 85px; border-radius: 10px;">
+                <div class="card-body">
+                    <h5 class="card-title">Withdraw Amount $ <span id="with-amount">00</span></h5>
+                    <input id="with-input" type="number" placeholder="Enter your Withdraw Amount">
+                    <button id="withdraw-btn">Withdraw</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+</body>
+<script src="index.js"></script>
+</html>
